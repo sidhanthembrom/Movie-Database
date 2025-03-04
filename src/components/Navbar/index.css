@@ -1,0 +1,26 @@
+.navbar-container {
+  border: 2px solid black;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-list > li {
+  cursor: pointer;
+}
+
+.searchBox {
+  height: 30px;
+  width: 200px;
+}

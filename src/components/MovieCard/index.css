@@ -1,0 +1,11 @@
+.card-list {
+  width: 300px;
+  /* border: 2px solid orange; */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
