@@ -36,17 +36,17 @@ class Navbar extends Component {
         </div>
         <ul className="navbar-list">
           <li>
-            <button>
+            <button type="button">
               <Link to="/">Popular</Link>
             </button>
           </li>
           <li>
-            <button>
+            <button type="button">
               <Link to="/top-rated">Top Rated</Link>
             </button>
           </li>
           <li>
-            <button>
+            <button type="button">
               <Link to="/upcoming">Upcoming</Link>
             </button>
           </li>

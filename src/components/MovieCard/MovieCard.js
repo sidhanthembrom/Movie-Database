@@ -15,7 +15,7 @@ class MovieCard extends Component {
         <div className="text-container">
           <h1>{movie.title}</h1>
           <p>Rating: {movie.vote_average}</p>
-          <button>
+          <button type="button">
             <Link to={`/movie/${movie.id}`}>View Details</Link>
           </button>
         </div>

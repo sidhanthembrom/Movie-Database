@@ -4,3 +4,12 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-container > button{
+  margin: 0 1rem;
+}

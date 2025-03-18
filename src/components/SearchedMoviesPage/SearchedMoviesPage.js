@@ -28,7 +28,7 @@ class SearchedMoviesPage extends Component {
   }
 
   render() {
-    const {movieName, movieList} = this.state
+    const {movieList} = this.state
 
     return (
       <div>
