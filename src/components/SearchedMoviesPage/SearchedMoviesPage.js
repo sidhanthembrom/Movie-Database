@@ -32,11 +32,13 @@ class SearchedMoviesPage extends Component {
 
     return (
       <div>
-        <ul className="movieList">
-          {movieList.map(movie => (
-            <MovieCard movie={movie} key={movie.id} />
-          ))}
-        </ul>
+        <div className="movieList-container">
+          <ul className="movieList">
+            {movieList.map(movie => (
+              <MovieCard movie={movie} key={movie.id} />
+            ))}
+          </ul>
+        </div>
       </div>
     )
   }
