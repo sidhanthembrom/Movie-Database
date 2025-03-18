@@ -47,9 +47,9 @@ class MovieSummary extends Component {
     const posterImg = movieDetails.poster_path
 
     return (
-      <div>
-        <div>
-          <h1>Movie Details Section</h1>
+      <div className="movieSummary-container">
+        <div className="topSection">
+          <h1 className="movieDetails-section-title">Movie Details Section</h1>
           <p>{movieDetails.title}</p>
           <img
             src={`https://image.tmdb.org/t/p/w300/${posterImg}.jpg`}
