@@ -11,9 +11,11 @@ class MovieCard extends Component {
         <img
           src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}.jpg`}
           alt={movie.title}
+          height="400px"
+          width="300px"
         />
         <div className="text-container">
-          <h1>{movie.title}</h1>
+          <h1 className="movie-title">{movie.title}</h1>
           <p>Rating: {movie.vote_average}</p>
           <button type="button">
             <Link to={`/movie/${movie.id}`}>View Details</Link>

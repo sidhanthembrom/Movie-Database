@@ -29,7 +29,7 @@ class Popular extends Component {
       this.setState(
         prevState => ({currentPage: prevState.currentPage - 1}),
         () => {
-          // const {currentPage} = this.state
+          const {currentPage} = this.state
           this.fetchingData(currentPage)
         },
       )
@@ -43,7 +43,7 @@ class Popular extends Component {
       this.setState(
         prevState => ({currentPage: prevState.currentPage + 1}),
         () => {
-          // const {currentPage} = this.state
+          const {currentPage} = this.state
           this.fetchingData(currentPage)
         },
       )
@@ -56,19 +56,21 @@ class Popular extends Component {
 
     return (
       <div>
-        <ul className="movieList">
-          {movieList.map(movie => (
-            <MovieCard movie={movie} key={movie.id} />
-          ))}
-        </ul>
-        <div className="pagination-container">
-          <button type="button" onClick={this.handlePrevBtn}>
-            Prev
-          </button>
-          <p>{currentPage}</p>
-          <button type="button" onClick={this.handleNextBtn}>
-            Next
-          </button>
+        <div className="movieList-container">
+          <ul className="movieList">
+            {movieList.map(movie => (
+              <MovieCard movie={movie} key={movie.id} />
+            ))}
+          </ul>
+          <div className="pagination-container">
+            <button type="button" onClick={this.handlePrevBtn}>
+              Prev
+            </button>
+            <p>{currentPage}</p>
+            <button type="button" onClick={this.handleNextBtn}>
+              Next
+            </button>
+          </div>
         </div>
       </div>
     )

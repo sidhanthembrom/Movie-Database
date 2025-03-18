@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  color: white;
 }
 
 body {
@@ -9,4 +10,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  height: 30px;
+  padding: 0 1.5rem;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button > a {
+  color: white;
+  text-decoration: none;
 }

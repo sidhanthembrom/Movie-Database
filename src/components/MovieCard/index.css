@@ -3,6 +3,25 @@
   /* border: 2px solid orange; */
 }
 
+img {
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.movie-title {
+  border: 2px solid black;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-align: center;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;

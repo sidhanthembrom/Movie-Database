@@ -21,7 +21,7 @@ class Navbar extends Component {
 
     return (
       <div className="navbar-container">
-        <h1>movieDB</h1>
+        <h1 className="siteName">movieDB</h1>
         <div>
           <input
             className="searchBox"
@@ -36,19 +36,19 @@ class Navbar extends Component {
         </div>
         <ul className="navbar-list">
           <li>
-            <button type="button">
-              <Link to="/">Popular</Link>
-            </button>
+            <Link to="/">
+              <button type="button">Popular</button>
+            </Link>
           </li>
           <li>
-            <button type="button">
-              <Link to="/top-rated">Top Rated</Link>
-            </button>
+            <Link to="/top-rated">
+              <button type="button">Top Rated</button>
+            </Link>
           </li>
           <li>
-            <button type="button">
-              <Link to="/upcoming">Upcoming</Link>
-            </button>
+            <Link to="/upcoming">
+              <button type="button">Upcoming</button>
+            </Link>
           </li>
         </ul>
       </div>
