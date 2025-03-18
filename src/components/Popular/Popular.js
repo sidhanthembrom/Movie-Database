@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+
 import {Component} from 'react'
 import MovieCard from '../MovieCard/MovieCard'
 import './index.css'
